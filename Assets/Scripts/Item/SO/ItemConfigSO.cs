@@ -1,9 +1,10 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
 // [CreateAssetMenu(fileName = "ItemConfigSO", menuName = "Item/Item Config")]
 public class ItemConfigSO : ScriptableObject
 {
+    public string GUID { get; set; }
+
     // 通用属性
     public int itemID;
     public string itemName;
