@@ -52,6 +52,7 @@ public class ItemEditor : EditorWindow
         root.Q<Button>("ItemAddButton").clicked += OnAddButtonClicked;
         root.Q<Button>("ItemDeleteButton").clicked += OnDeleteButtonClicked;
         root.Q<Button>("RenameSOAsset").clicked += OnRenameSOAssetButtonClick;
+        root.Q<Button>("ExportToCSV").clicked += OnExportCSVButtonClick;
 
         // 加载数据
         LoadDataBase();
@@ -187,6 +188,16 @@ public class ItemEditor : EditorWindow
         // 更改SO资源名称
         var path = AssetDatabase.GUIDToAssetPath(currentItem.GUID);
         AssetDatabase.RenameAsset(path, currentItem.itemName);
+    }
+
+    /// <summary>
+    /// 所有配置导出至一个CSV文件（Excel）
+    /// </summary>
+    private void OnExportCSVButtonClick()
+    {
+        var csvWriter = new CSVWriter(Application.dataPath + "/ItemConfigs.csv");
+        csvWriter.Write(itemList);
+        AssetDatabase.Refresh();
     }
 
     /// <summary>

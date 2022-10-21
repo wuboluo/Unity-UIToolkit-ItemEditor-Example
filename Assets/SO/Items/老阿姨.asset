@@ -16,7 +16,7 @@ MonoBehaviour:
   itemName: "\u8001\u963F\u59E8"
   itemType: 3
   itemIcon: {fileID: 21300000, guid: 6052a3ac0373fa7479290bf34501a24d, type: 3}
-  itemDescription: 
+  itemDescription: "\u8FD9\u4E2A\u6CA1\u4EC0\u4E48\u53EF\u8BF4\u7684"
   canPickedUp: 0
   canDropped: 0
   canAte: 0

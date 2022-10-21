@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: "\u70E7\u94F6\u884C"
   m_EditorClassIdentifier: 
   itemID: 1
-  itemName: 111
+  itemName: "\u70E7\u94F6\u884C"
   itemType: 0
-  itemIcon: {fileID: 0}
-  itemDescription: 
+  itemIcon: {fileID: 21300000, guid: 35d50132c364d1247aafe9f3e795688c, type: 3}
+  itemDescription: "\u6765\u81EASYH"
   canPickedUp: 0
   canDropped: 0
   canAte: 0
