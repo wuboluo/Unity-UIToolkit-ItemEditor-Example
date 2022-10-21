@@ -12,7 +12,7 @@ public class ItemConfigSO : ScriptableObject
     public Sprite itemIcon;
 
     // 描述
-    public string description;
+    public string itemDescription;
 
     // 使用规则
     public bool canPickedUp;
